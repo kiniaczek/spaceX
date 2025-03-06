@@ -4,10 +4,12 @@ import RocketDetails from "./pages/RocketDetails";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/rockets/:rocketId" element={<RocketDetails />} />
-    </Routes>
+    <div className="flex justify-center items-center min-h-screen w-full">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/rockets/:rocketId" element={<RocketDetails />} />
+      </Routes>
+    </div>
   );
 }
 
